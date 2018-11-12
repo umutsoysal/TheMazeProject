@@ -12,6 +12,7 @@ int main(void)
 
 {
     printf("Xcode project starts");
+    printf("This is another commit");
     return 0;
     
 }
