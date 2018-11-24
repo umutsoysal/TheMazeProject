@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8178BF202199E81500C81462 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8178BF1F2199E81500C81462 /* AppDelegate.m */; };
-		8178BF232199E81500C81462 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8178BF222199E81500C81462 /* ViewController.m */; };
+		8171065721A9242800F233A4 /* maze.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8171065521A9242800F233A4 /* maze.cpp */; };
 		8178BF252199E81800C81462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8178BF242199E81800C81462 /* Assets.xcassets */; };
 		8178BF282199E81800C81462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8178BF262199E81800C81462 /* Main.storyboard */; };
 		8178BF362199E81800C81462 /* TheMazeProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8178BF352199E81800C81462 /* TheMazeProjectTests.m */; };
 		8178BF412199E81800C81462 /* TheMazeProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8178BF402199E81800C81462 /* TheMazeProjectUITests.m */; };
-		8178BF502199E83300C81462 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8178BF4E2199E83300C81462 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8171065521A9242800F233A4 /* maze.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = maze.cpp; sourceTree = "<group>"; };
+		8171065621A9242800F233A4 /* maze.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = maze.hpp; sourceTree = "<group>"; };
 		8178BF1B2199E81500C81462 /* TheMazeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMazeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8178BF1E2199E81500C81462 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8178BF1F2199E81500C81462 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8178BF212199E81500C81462 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8178BF222199E81500C81462 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8178BF242199E81800C81462 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8178BF272199E81800C81462 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8178BF292199E81800C81462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,8 +45,6 @@
 		8178BF3C2199E81800C81462 /* TheMazeProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMazeProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8178BF402199E81800C81462 /* TheMazeProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMazeProjectUITests.m; sourceTree = "<group>"; };
 		8178BF422199E81800C81462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8178BF4E2199E83300C81462 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		8178BF4F2199E83300C81462 /* main.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = main.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,16 +95,12 @@
 		8178BF1D2199E81500C81462 /* TheMazeProject */ = {
 			isa = PBXGroup;
 			children = (
-				8178BF1E2199E81500C81462 /* AppDelegate.h */,
-				8178BF1F2199E81500C81462 /* AppDelegate.m */,
-				8178BF212199E81500C81462 /* ViewController.h */,
-				8178BF222199E81500C81462 /* ViewController.m */,
 				8178BF242199E81800C81462 /* Assets.xcassets */,
 				8178BF262199E81800C81462 /* Main.storyboard */,
 				8178BF292199E81800C81462 /* Info.plist */,
 				8178BF2C2199E81800C81462 /* TheMazeProject.entitlements */,
-				8178BF4E2199E83300C81462 /* main.cpp */,
-				8178BF4F2199E83300C81462 /* main.hpp */,
+				8171065521A9242800F233A4 /* maze.cpp */,
+				8171065621A9242800F233A4 /* maze.hpp */,
 			);
 			path = TheMazeProject;
 			sourceTree = "<group>";
@@ -262,9 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8178BF232199E81500C81462 /* ViewController.m in Sources */,
-				8178BF202199E81500C81462 /* AppDelegate.m in Sources */,
-				8178BF502199E83300C81462 /* main.cpp in Sources */,
+				8171065721A9242800F233A4 /* maze.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
