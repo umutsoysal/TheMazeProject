@@ -8,4 +8,4 @@
 
 #include "maze.hpp"
 
-Print('TEST')
+print('TEST');
