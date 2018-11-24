@@ -7,5 +7,12 @@
 //
 
 #include "maze.hpp"
+#include <stdlib.h>
+#include <stdio.h>
 
-print('TEST');
+
+int main(void)
+{
+    printf("TEST");
+    return 0;
+}
